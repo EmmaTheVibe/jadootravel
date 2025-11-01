@@ -1,0 +1,38 @@
+.navLinks {
+  color: var(--new-dark-600);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.navLinks button {
+  font-family: var(--font-poppins), sans-serif;
+  width: fit-content;
+  background: none;
+  padding: 9px 22px;
+  border-radius: 10px;
+  border: 1.5px solid var(--new-dark-600);
+}
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 6.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .navLinks {
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .navLinks {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navLinks {
+    gap: 62px;
+  }
+}

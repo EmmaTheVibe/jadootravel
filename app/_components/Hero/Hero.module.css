@@ -1,0 +1,257 @@
+.hero {
+  padding: 140px 0 0 0;
+  position: relative;
+}
+.bg {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  z-index: -2;
+  top: 0;
+  right: 0;
+}
+.motto {
+  color: var(--accent-700);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.heroMain {
+  position: relative;
+  width: 100%;
+  color: var(--new-dark-800);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.heroMain img {
+  position: absolute;
+  width: 195px;
+  top: 40px;
+  right: -30px;
+  z-index: -1;
+}
+.heroMain h1 {
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 800;
+}
+.txt {
+  margin-bottom: 34px;
+  font-weight: 500;
+}
+.btnGroup {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.playbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 60px;
+  cursor: pointer;
+}
+.playBtn {
+  background-color: var(--accent-700);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnFilled {
+  background-color: var(--new-accent-a2);
+  width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+}
+.bannerBox {
+  position: relative;
+  overflow: hidden;
+}
+.plane1,
+.plane2 {
+  width: 137.29px;
+  height: 95.23px;
+  position: absolute;
+  z-index: -1;
+}
+.plane1 {
+  left: -30px;
+}
+.plane2 {
+  right: -30px;
+  top: 36px;
+}
+.bannerWrap {
+  width: 100%;
+}
+.banner {
+  width: inherit;
+  /* transform: translateX(-10px); */
+}
+
+@media screen and (min-width: 400px) {
+  .motto {
+    font-size: 16px;
+  }
+  .heroMain h1 {
+    font-size: 52px;
+    line-height: 69px;
+    font-weight: 800;
+  }
+  .btnGroup {
+    flex-direction: row;
+  }
+  .heroMain img {
+    width: 230px;
+    right: -25px;
+    top: 48px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bg {
+    width: 400px;
+    height: 550px;
+  }
+  .motto {
+    font-size: 16px;
+  }
+  .heroMain h1 {
+    font-size: 62px;
+    line-height: 79px;
+    width: 500px;
+  }
+  .heroMain img {
+    width: 270px;
+    right: 125px;
+    top: 55px;
+  }
+  .bannerWrap {
+    width: 500px;
+  }
+  .banner {
+    transform: translateX(0);
+  }
+  .plane1 {
+    left: 30px;
+  }
+  .plane2 {
+    right: 60px;
+    top: 66px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .motto {
+    font-size: 16px;
+  }
+  .heroMain h1 {
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 800;
+    width: unset;
+  }
+  .btnGroup {
+    margin: 0;
+  }
+  .heroMain img {
+    width: 195px;
+    top: 40px;
+    right: 120px;
+    z-index: -1;
+  }
+  .bannerBox {
+    width: fit-content;
+  }
+  .bannerWrap {
+    width: 100%;
+  }
+  .plane1 {
+    left: 0;
+    top: -20px;
+  }
+  .plane2 {
+    right: 60px;
+    top: 66px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bg {
+    width: 600px;
+    height: auto;
+  }
+  .heroMain h1 {
+    font-size: 62px;
+    line-height: 79px;
+    width: 500px;
+  }
+  .heroMain img {
+    width: 270px;
+    right: 140px;
+    top: 55px;
+  }
+  .btnGroup {
+    margin: 0;
+  }
+  .bannerBox {
+    width: fit-content;
+  }
+  .bannerWrap {
+    width: 100%;
+  }
+  .plane1 {
+    left: 30px;
+    top: unset;
+  }
+  .plane2 {
+    right: -30px;
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 100px;
+  }
+  .bg {
+    width: 680px;
+  }
+  .wrapper {
+    align-items: flex-start;
+  }
+  .intro {
+    margin-top: 50px;
+  }
+  .hero h1 {
+    font-size: 84px;
+    line-height: 90px;
+    width: 600px;
+  }
+  .heroMain img {
+    width: 385px;
+    right: -60px;
+    top: 65px;
+  }
+  .txt {
+    width: 477px;
+  }
+  .plane1,
+  .plane2 {
+    width: 230px;
+    height: 140px;
+  }
+  .plane2 {
+    right: -60px;
+    top: 90px;
+  }
+}

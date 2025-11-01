@@ -1,0 +1,184 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 82px;
+  width: 100%;
+}
+
+.reviewStack {
+  position: relative;
+  width: 268px;
+  height: 280px;
+  margin: 40px 0;
+}
+
+.reviewCard {
+  width: 268px;
+  position: relative;
+  padding: 28px 20px;
+  border-radius: 10px;
+  background-color: var(--neutral-0);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border: 1.7px solid var(--new-gray-100);
+}
+
+.activeCard {
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.0152),
+    0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.0121),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.0079),
+    0px 1.85px 3.15px 0px rgba(0, 0, 0, 0.0048);
+  border: none;
+}
+
+.reviewCard img {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: -10px;
+  left: -23px;
+  border-radius: 50%;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  margin-bottom: 34px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--neutral-700);
+}
+
+.name {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--neutral-900);
+  margin-bottom: 4px;
+}
+
+.tag {
+  font-size: 14px;
+  color: var(--neutral-600);
+}
+
+/* Navigation Controls */
+.controlBox {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.controls {
+  display: flex;
+  width: fit-content;
+  gap: 32px;
+  padding: 8px 12px;
+  border: 2px solid var(--new-gray-100);
+  border-radius: 8px;
+}
+
+.controlBtn {
+  background: none;
+  color: var(--new-dark-500);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controlBtn:hover {
+  color: var(--new-dark-black);
+}
+@media screen and (min-width: 400px) {
+  .reviewCard,
+  .reviewStack {
+    width: 323px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .reviewCard,
+  .reviewStack {
+    width: 521px;
+  }
+  .reviewCard {
+    padding: 28px 34px 34px 44px;
+  }
+  .reviewCard img {
+    width: 68px;
+    height: 68px;
+    top: -10px;
+    left: -34px;
+  }
+  .comment {
+    width: 402px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    gap: 50px;
+  }
+  .reviewCard,
+  .reviewStack {
+    width: 400px;
+  }
+  .reviewCard {
+    padding: 28px 20px;
+  }
+  .reviewCard img {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: -10px;
+    left: -23px;
+    border-radius: 50%;
+  }
+  .comment {
+    font-size: 14px;
+    width: unset;
+  }
+  .controlBox {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 541px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: fit-content;
+  }
+  .reviewCard,
+  .reviewStack {
+    width: 521px;
+  }
+  .reviewCard {
+    padding: 28px 34px 34px 44px;
+  }
+  .reviewCard img {
+    width: 68px;
+    height: 68px;
+    top: -10px;
+    left: -34px;
+  }
+  .comment {
+    width: 402px;
+    font-size: 16px;
+  }
+  .controlBox {
+    justify-content: flex-end;
+  }
+}
